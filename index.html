@@ -1,0 +1,62 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Matrizes</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3">
+                <h3>MATRIZES</h3>
+            </td>
+        </tr>
+        <tr>
+            <td class="dimensao_A">
+                <input type="number" id="dimensao_linhas_A" placeholder="Linhas">
+                <input type="number" id="dimensao_colunas_A" placeholder="Colunas">
+            </td>
+            <td class="gerar">
+                <input type="button" value="GERAR" id="gerar" onclick="gerarMatriz()">
+            </td>
+            <td class="dimensao_B">
+                <input type="number" id="dimensao_linhas_B" placeholder="Linhas">
+                <input type="number" id="dimensao_colunas_B" placeholder="Colunas">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <!--matriz A-->
+                A = 
+                <table id="matriz_A"></table>
+                
+            </td>
+            <td class="operacoes">
+                <input type="button" value="SOMA" id="soma" onclick="soma()">
+            </td>
+            <td rowspan="3">
+                <!--matriz B-->
+                B = 
+                <table id="matriz_B"></table>
+            </td>
+        </tr>
+        <tr>
+            <td class="operacoes">
+                <input type="button" value="SUBTRAÇÃO" id="subtracao" onclick="subtracao()">
+            </td>
+        </tr>
+        <tr>
+            <td class="operacoes">
+                <input type="button" value="MULTIPLICAÇÃO" id="multiplicacao" onclick="multiplicacao()">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="resultado">
+                <p>R = </p> 
+                <table id="matriz_R"></table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
